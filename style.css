@@ -8,6 +8,26 @@
 html{
     font-family: 'Poppins', sans-serif;
 }
+.full-page{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header{
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color:rgba(131, 131, 131, 0.5);
+    position: fixed;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+header a{
+    margin-left: 25px;
+    color: #000;
+}
 a{
     text-decoration: none;
 }
@@ -26,6 +46,14 @@ a{
     width: 75%;
     margin:auto;
 }
+.scroll{
+    text-align: center;
+    color: #000;
+}
+.scroll a{
+text-decoration: none;
+color: #000;
+}
 .hero p{
     font-size: 16px;
     margin-bottom: 7px;
@@ -35,10 +63,31 @@ a{
     line-height: 1.19;
     margin-bottom: 20px;
 }
-.hero a{
+.hero-content a{
     font-size:13px;
     color:red;
     background:#fff;
     padding:7px 20px;
     border-radius: 20px;
+}
+
+h1,h2,h3,h4,h5{
+    margin-bottom: 15px;
+}
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+.intro p{
+    max-width: 550px;
+    margin-bottom: 15px;
+}
+.info-image{
+    background-color: #9999;
+}
+main,section{
+    padding: 100px 0;
+
 }
