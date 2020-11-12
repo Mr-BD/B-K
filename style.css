@@ -35,6 +35,7 @@ a {
     background: #ff33 url('./images/headphones.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -50,12 +51,16 @@ a {
 
 .scroll {
     text-align: center;
-    color: #000;
-}
+    color: rgb(248, 7, 7);
+    position: absolute;
+    bottom: 60px;
+    transform: translateX(-50%);
+    left: 50%;
+    }
 
 .scroll a {
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
 }
 
 .hero p {
@@ -71,7 +76,7 @@ a {
 
 .hero-content a {
     font-size: 13px;
-    color: red;
+    color: rgb(0, 0, 0);
     background: #fff;
     padding: 7px 20px;
     border-radius: 20px;
@@ -86,9 +91,11 @@ h5 {
 }
 
 .intro {
+    padding: 100px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
+
 }
 
 .intro p {
@@ -108,7 +115,7 @@ h5 {
     margin: 0 auto;
     position: absolute;
     right: 180px;
-    top: 20px;
+    top: 0;
 
 }
 
@@ -121,13 +128,48 @@ h5 {
     width: 100vw;
     margin-top: 50px;
 }
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+h3{
+    text-align: center;
+    font-size: 24px;
+}
+.card {
+    padding: 20px 0;
+    max-width: 300px;
+    min-width: 250px;
+    margin: auto;
+    height: 600px;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: 20%;
+ background: #777 url(/images/headphnes.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 .grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));display: grid;
-        grid-template-rows: repeat(auto-fill, minmax(250px, 200px));
-        grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));display: grid;
+        grid-gap: 10px;
         position: relative;
-        margin: 20px;
-        height: 500px;
+        height: 700px;
+        
 
 }
 .project{
@@ -135,3 +177,39 @@ h5 {
 }
 
 
+/* media queries */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-gap: none;
+    }
+
+    .card {
+        margin: none;
+        max-width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .logo {
+        margin-bottom: 30px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;    
+    }
+
+    nav a {
+        margin: auto;
+    }
+
+
+
+}
