@@ -1,85 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(131, 131, 131, 0.5);
-    position: fixed;
-    padding: 15px 50px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(131, 131, 131, 0.5);
+  position: fixed;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
 }
 
 header a {
-    margin-left: 25px;
-    color: #000;
+  margin-left: 25px;
+  color: #000;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .hero {
-    background: #ff33 url('./images/headphones.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  background: #ff33 url("./images/headphones.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-content {
-    width: 75%;
-    margin: auto;
+  width: 75%;
+  margin: auto;
 }
 
 .scroll {
-    text-align: center;
-    color: rgb(248, 7, 7);
-    position: absolute;
-    bottom: 60px;
-    transform: translateX(-50%);
-    left: 50%;
-    }
+  text-align: center;
+  color: rgb(248, 7, 7);
+  position: absolute;
+  bottom: 60px;
+  transform: translateX(-50%);
+  left: 50%;
+}
 
 .scroll a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .hero p {
-    font-size: 16px;
-    margin-bottom: 7px;
+  font-size: 16px;
+  margin-bottom: 7px;
 }
 
 .hero h1 {
-    font-size: 51px;
-    line-height: 1.19;
-    margin-bottom: 20px;
+  font-size: 51px;
+  line-height: 1.19;
+  margin-bottom: 20px;
 }
 
 .hero-content a {
-    font-size: 13px;
-    color: rgb(0, 0, 0);
-    background: #fff;
-    padding: 7px 20px;
-    border-radius: 20px;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  background: #fff;
+  padding: 7px 20px;
+  border-radius: 20px;
 }
 
 h1,
@@ -87,129 +86,121 @@ h2,
 h3,
 h4,
 h5 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .intro {
-    padding: 100px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .intro p {
-    max-width: 550px;
-    margin-bottom: 15px;
+  max-width: 550px;
+  margin-bottom: 15px;
 }
 
 .info-image {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .info-image img {
-    width: 40%;
-    height: auto;
-    border-radius: 50%;
-    margin: 0 auto;
-    position: absolute;
-    right: 180px;
-    top: 0;
-
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  right: 180px;
+  top: 0;
 }
 
 .heading {
-    padding: 50px 120px;
-    background: rgb(226,223,36);
-    background: linear-gradient(86deg, rgba(226,223,36,1) 0%, rgba(133,115,23,1) 52%, rgba(0,0,0,1) 100%);
-    margin: auto;
-    margin-bottom: 50px;
-    width: 100vw;
-    margin-top: 50px;
+  padding: 50px 120px;
+  background: rgb(226, 223, 36);
+  background: linear-gradient(
+    86deg,
+    rgba(226, 223, 36, 1) 0%,
+    rgba(133, 115, 23, 1) 52%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  margin: auto;
+  margin-bottom: 50px;
+  width: 100vw;
+  margin-top: 50px;
 }
 
 /* CARDS */
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
-h3{
-    text-align: center;
-    font-size: 24px;
+h3 {
+  text-align: center;
+  font-size: 24px;
 }
 .card {
-    padding: 20px 0;
-    max-width: 300px;
-    min-width: 250px;
-    margin: auto;
-    height: 600px;
+  padding: 20px 0;
+  max-width: 300px;
+  min-width: 250px;
+  margin: auto;
+  height: 600px;
 }
 
-.image{
-    display: block;
-    width: 100%;
-    height: 20%;
- background: #777 url(/images/headphnes.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
+.image {
+  display: block;
+  width: 100%;
+  height: 20%;
+  background: #777 url(/images/headphnes.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
-
-
-
-
-
-
-
 
 .grid {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));display: grid;
-        grid-gap: 10px;
-        position: relative;
-        height: 700px;
-        
-
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  display: grid;
+  grid-gap: 10px;
+  position: relative;
+  height: 700px;
 }
-.project{
-    background:#222;
+.project {
+  background: #222;
 }
 
-
-/* media queries */
+/* 
+MEDIA QUERIES
+*/
 @media (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr;
-        grid-gap: none;
-    }
+  .cards {
+    grid-template-columns: 1fr;
+    grid-gap: none;
+  }
 
-    .card {
-        margin: none;
-        max-width: 100%;
-    }
+  .card {
+    margin: none;
+    max-width: 100%;
+  }
 
-    header {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 
-    header .logo {
-        margin-bottom: 30px;
-    }
+  header .logo {
+    margin-bottom: 30px;
+  }
 
-    header nav {
-        display: flex;
-        flex-direction: column;    
-    }
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
 
-    nav a {
-        margin: auto;
-    }
-
-
-
+  nav a {
+    margin: auto;
+  }
 }
